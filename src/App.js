@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./components/Home";
+import { Component } from "react";
+import StatePage from "./components/StatePage";
+import SetStatePage from "./components/SetStatePage";
+import Event from "./components/Event";
+import UserForm from "./components/userForm";
+import EventBind from "./components/EventBind";
+import UserGreeting from "./components/UserGreeting";
+import Form from "./components/Form";
+import ClickCounter from "./components/ClickCounter";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ClickCounter />
+      {/* <Form /> */}
+      {/* <UserGreeting /> */}
+      {/* <EventBind /> */}
+      {/* <UserForm /> */}
+      {/* <Event /> */}
+      {/* <SetStatePage /> */}
+      {/* <StatePage /> */}
+      {/* <Home name="Assane Gueye" />
+        <Home name="pathe Gueye" />
+        <Home name="Demba Gueye" /> */}
     </div>
   );
 }
